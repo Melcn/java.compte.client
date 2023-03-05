@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<header>
+        <h1>Gestion de comptes bancaires avec JSP</h1>
+
+    </header>
+
+    <main>
+        <section id="formulaire">
+
+            <form action="ServletCompte" method ="post">
+               <div class="c">
+                <label for="titulaire">Titulaire</label>
+                <input type="text" name="titulaire">
+            </div><div class="c">
+                <label for="num">Numero</label>
+                <input type="text" name="num">
+            </div><div class="c">
+                <label for="solde">Solde, Credit ou Debit</label>
+                <input type="text" name="solde">
+            </div><div class="c">
+
+                <input type="radio" name="compte" value="Creer"> <label for="">Créer un compte</label>
+                <input type="radio" name="compte" value="Crediter"> <label for="">Créditer un compte</label>
+                <input type="radio" name="compte" value="Debiter"> <label for="">Débiter un compte</label>
+            </div>
+
+                <input type="submit" value="Executer">
+                <input type="reset" value ="Remise à zero">
+            </form>
+        </section>
+
+        <section id="bank">
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Traitements</p>
+    </footer>
+
+</body>
+</html>
